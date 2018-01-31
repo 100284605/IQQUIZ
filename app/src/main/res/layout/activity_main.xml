@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.example.android.iqquiz.MainActivity">
+
+    <ImageView
+        android:id="@+id/android_brain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/brain" />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="2"
+        android:hint="@string/welcome"
+        android:inputType="textCapWords"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/status_question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/are_you_smarter_than_the_average_person"
+        android:textColor="#2196F3"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="#64B5F6"
+        android:onClick="sendMessage"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/begin_iq_test"
+        android:textSize="18sp" />
+
+</LinearLayout>

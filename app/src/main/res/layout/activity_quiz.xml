@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="24dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="24dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp">
+
+
+            <ImageView
+                android:id="@+id/watches"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/watch"
+                app:srcCompat="@drawable/watch" />
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/question_1"
+                android:textColor="#03A9F4"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+
+            <TextView
+                android:id="@+id/did_you_know"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:text="@string/did_you_know"
+                android:textAllCaps="true"
+                android:textColor="#FFD180"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/did_you_know"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text="@string/your_gender_can_greatly_influence_your_iq_results"
+                android:textColor="#FFD180"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/results"
+                android:layout_marginTop="66dp"
+                android:text="@string/please_select_your_gender"
+                android:textColor="#03A9F4"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/female"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/male"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+
+            <ImageView
+                android:id="@+id/sexesPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/radioButtonGroup1"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/iq"
+                app:srcCompat="@drawable/sexes" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="24dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="24dp"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp">
+
+
+                <ImageView
+                    android:id="@+id/watch3"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/watch"
+                    android:src="@drawable/watch" />
+
+                <TextView
+                    android:id="@+id/question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/question_2"
+                    android:textColor="#03A9F4"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp">
+
+
+                <TextView
+                    android:id="@+id/ready_for_fun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/ready_for_some_fun"
+                    android:textAllCaps="true"
+                    android:textColor="#6200EA"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/results1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ready_for_fun"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/what_is_your_color_perception_iq"
+                    android:textColor="#8BC34A"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/results1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="66dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/choose_the_different_text_color"
+                    android:textColor="#F50057"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/color"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/pick_me"
+                        android:textColor="#00695C"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/pick_me_2"
+                        android:textColor="#00897B"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/pick_me_3"
+                        android:textColor="#00695C"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/pick_me_4"
+                        android:textColor="#00695C"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RadioGroup>
+
+
+                <ImageView
+                    android:id="@+id/colours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/radioButton"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/iq"
+                    android:src="@drawable/multicolor" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="24dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="24dp"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp">
+
+
+                <ImageView
+                    android:id="@+id/watch4"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/watch"
+                    android:src="@drawable/watch" />
+
+                <TextView
+                    android:id="@+id/question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/question_3"
+                    android:textAllCaps="true"
+                    android:textColor="#03A9F4"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp">
+
+
+                <TextView
+                    android:id="@+id/mathematics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/hmm_mathematics"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/circles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mathematics"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/how_many_circles_do_you_see_in_the_picture_below"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/math"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/circles"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="66dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/just_do_the_math"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/math"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="decrement"
+                        android:text="@string/minus_" />
+
+                    <TextView
+                        android:id="@+id/title_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="52dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/_0"
+                        android:textColor="#4689C8"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="increment"
+                        android:text="@string/plus_" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/iq"
+                    android:src="@drawable/circles" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="24dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="24dp"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp">
+
+
+                <ImageView
+                    android:id="@+id/watch5"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/watch"
+                    android:src="@drawable/watch" />
+
+                <TextView
+                    android:id="@+id/question4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/question_4"
+                    android:textAllCaps="true"
+                    android:textColor="#03A9F4"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF">
+
+
+                <TextView
+                    android:id="@+id/chemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/fields_of_chemistry"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/carbon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chemistry"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/carbon_dioxide_co2_contains"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/choose_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/carbon"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="66dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/choose_the_correct_answers"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/choose_option"
+                    android:orientation="vertical"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+
+                    <CheckBox
+                        android:id="@+id/option1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/carbon_c"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/option2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/option1"
+                        android:text="@string/sodium_na"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/option3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/option2"
+                        android:text="@string/oxygen_o"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/option4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/option3"
+                        android:text="@string/iron_fe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/co2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/option4"
+                        android:contentDescription="@string/iq"
+                        android:src="@drawable/periodic" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="24dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="24dp"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp">
+
+
+                <ImageView
+                    android:id="@+id/watch"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/watch"
+                    android:src="@drawable/watch" />
+
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/question_5"
+                    android:textAllCaps="true"
+                    android:textColor="#03A9F4"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+
+                <TextView
+                    android:id="@+id/logical_sequence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/logical_sequence"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/directions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logical_sequence"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/directions_to_solve"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/meditation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/directions"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/iq"
+                    android:src="@drawable/meditation" />
+
+                <TextView
+                    android:id="@+id/arrange_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/meditation"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/arrange_the_words_given_below_in_a_meaningful_sequence"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/given_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arrange_words"
+                    android:layout_marginBottom="24dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/_1_key_2_door_3_lock_4_room_5_switch_on"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/given_words"
+                    android:padding="20dp">
+
+                    <RadioButton
+                        android:id="@+id/option11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a_5_1_2_4_3"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/option22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/b_4_2_1_5_3"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/option33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/c_1_3_2_4_5"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/option44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/d_1_2_3_5_4"
+                        android:textSize="16sp" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="32dp"
+            android:background="#64B5F6"
+            android:onClick="calculateScore"
+            android:text="@string/submit"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
